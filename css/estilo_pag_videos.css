@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
+  
 }
 
 /* Barra principal */
@@ -255,7 +256,8 @@ header{
     position: fixed;
     top: -10px;
     width: 100%;
-    background: #fff;
+    background: black;
+    box-shadow: 0 10px 30px -18px rgb(243, 240, 193);
     padding: 20px;
     z-index: 9;
     transition: all 600ms;
@@ -456,6 +458,8 @@ main .contenedor {
     padding: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    background:white;
+    z-index: 1;
 }
 
 main .contenedor .ctn-tag{
@@ -464,6 +468,7 @@ main .contenedor .ctn-tag{
     flex-wrap: wrap;
     margin-left: 16px;
     margin-top: 10px;
+
 }
 
 main .contenedor .ctn-tag li{
@@ -492,16 +497,16 @@ main .contenedor .post h4{
 
 .fm-video .vjs-control-bar {
 	background: #F4F4F4;
-	color: red;
+	color: black;
 }
 
 .fm-video .vjs-play-progress,
 .fm-video .vjs-volume-level {
-	background: red;
+    background: black;
 }
 
 .fm-video .vjs-slider {
-	background:red;
+	background:white;
 }
 
 .video-js:hover .vjs-big-play-button {
@@ -509,11 +514,11 @@ main .contenedor .post h4{
 }
 
 .fm-video .vjs-big-play-button {
-	background: rgba(0,0,0,.2);
+	background: rgba(138, 135, 135, 0.2);
 	width: 80px;
 	height: 80px;
 	line-height: 80px;
-	border-radius: 100%;
+	border-radius: 50%;
 	border:none;
 }
 
