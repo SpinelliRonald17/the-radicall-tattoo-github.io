@@ -51,6 +51,9 @@ header{
     text-decoration: white; 
 } 
 
+.carousel-inner {
+    box-shadow: 0 10px 30px -18px rgb(243, 240, 193);
+}
 
 
 /* Menu de interacion ir a */
