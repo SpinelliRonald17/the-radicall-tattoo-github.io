@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2? family = Source + Sans + Pro: ital, wght @ 0,200; 0,300; 0,400; 0,600; 0,700; 0,900; 1,200; 1,300; 1,400; 1,600; 1,700; 1,900 & display = swap ');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* Barra principal */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: white;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+/* Ajustes de barra para centarlos */
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* Nombre o logo dentro de la barra centrado */
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Color del nombre */
+.logo h1 b{
+   color: red;
+}
+
+
+
+
+a {
+	text-decoration: none;
+}
+
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+
+.header-menu {
+	padding: 40px 0;
+}
+
+
+
+.header-menu .logo p {
+	color: #9B9B9B;
+}
+
+.header-menu form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.header-menu .barra-busqueda {
+	width: 70%;
+	height: 40px;
+	line-height: 40px;
+	background: rgb(216, 212, 212);
+	padding: 0 20px;
+	border-radius: 100px;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+}
+
+.header-menu .categorias {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.header-menu .categorias a {
+	color: #9B9B9B;
+	margin: 10px 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.header-menu .categorias a.activo {
+	color: #000;
+}
+
+/* ------------------------- */
+/* Grid */
+/* ------------------------- */
+
+.grid {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+	opacity: 1;
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+    width: calc(33.333333% - 20px);
+}
+
+.grid .item-contenido {
+	position: relative;
+}
+
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+    vertical-align: top;
+    border-radius: 6px;
+}
+
+/* ------------------------- */
+/* Overlay */
+/* ------------------------- */
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.9);
+	width: 100%;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+.overlay.activo {
+	display: flex;
+}
+
+.overlay img {
+    max-width: 100%;
+}
+
+.overlay .descripcion {
+	display: block;
+	background: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 5px;
+	border-radius: 10px;
+	max-width: 50%;
+}
+
+.contenedor-img {
+	position: relative;
+}
+
+.contenedor a:hover{
+    color: red;
+}
+
+.overlay #btn-cerrar-popup {
+	background: none;
+	font-size: 20px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: 190px;
+	top: -20px;
+}
+
+
+/* Menu de interacion ir a */
+.menu{
+   height: 80px;
+}
+
+.menu nav{
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+/* Centrar menu con logo */
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/*  Clase para seleccion Barra sobre menu de seleccion*/
+.menu-selected:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Color de las letras del menu*/
+.menu nav ul li a{
+    color: #777777;
+    font-size: 18px;
+    transition: color 300ms;
+}
+/* Efecto de cambiar color al pasar por encima  */
+.menu nav ul li a:hover{
+   color:red;
+}
+
+/* Clase para el color de letras */
+
+.menu .text-menu-selected{
+    color: red;
+}
+
+/* Logo marca */
+.menu nav ul div img{ 
+  display: none;
+}
+
+/* menu de pagina responsive */
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background: #f3f0f0fa;
+    border-radius: 100%;
+    color: #787878;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#icon-menu:hover{
+   color: rgb(248, 132, 132);
+   opacity: 0.8;
+}
+
+
+/* Portada */
+
+/* Centar la img y mostar completa*/
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    /* background-image: url(../img/fondo1.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Fondo transprente sobre la imagen
+.container-cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(241, 127, 127, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0; 
+}*/
+
+/* Contenido de informacion dentro de la img centrado y alineado*/
+.container-cover-info{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Modelo y color del texto de contenido de la img */
+
+.container-cover-info h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.container-cover-info p{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+/* Contenedor contenido del articulo */
+
+.container-content{
+  width: 1200px;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+/* articulos */
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -20px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Clase del articulo*/
+
+article:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+}
+
+/* Estilo de los titulos en el articulo */
+article h1{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+/* Estilos de los parrafos del articulo */
+article p{
+    margin-top: 20px;
+    font-size: 18px;
+    color:rgb(44, 38, 38);
+}
+
+/* Estilo de la imagen */
+article img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* Aside o otros articulos */
+
+.container-aside aside{
+    width: 320px;
+    box-shadow: 0 0 20px -20px black;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.container-aside aside img{
+    width: 100%;
+}
+
+/* Estilo dentro del aside */
+.container-aside aside h2,
+.container-aside aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+/* Estilo dentro del aside boton */
+
+.container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Efecto hover del boton */
+.container-aside aside button:hover{
+    opacity: 0.9;
+}
+
+
+
+
+
+/* btn ir arriba */
+
+#button-up{
+    width: 60px;
+    height: 60px;
+    background:red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition:all 300ms ease ;
+    transform: scale(0);
+}
+
+#button-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+    background: rgb(247, 90, 90) ;
+}
+
+/* iconos de redes sociales flotantes */
+
+.container-redes{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.container-redes a{
+    margin-top: 4px;
+}
+
+.container-redes img{
+    width: 60px;
+    padding: 4px;
+    background: rgba(0,0,0,0.0);
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 300ms;
+    text-decoration: none;
+}
+
+.container-redes a:hover img{
+    background: rgba(0,0,0,0.10);
+}
+
+
+.ubicacion{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+
+
+/* Footer - pie de pagina */
+
+
+/* Estilo del footer base */
+.container-footer{
+    width: 100%;
+    padding: 40px 0;
+    background-color: #f7f7f7f7;
+    margin-top: 40px;
+}
+
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilo del logo en el footer pie de pagina centar */
+.container-footer footer .logo-footer{
+   text-align: center;
+}
+
+.container-footer footer .redes-footer a{
+    text-decoration: none;
+}
+
+/* Estilo del logo en el footer pie de pagina tamaño */
+.container-footer footer .logo-footer img{
+   width: 100px;
+   border-radius: 100%;
+}
+
+/* Estilo del logo en el footer pie de pagina redes centar*/
+.container-footer footer .redes-footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Estilo del logo en el footer pie de pagina redes diseño */
+.container-footer footer .redes-footer .icon-redes-footer{
+  font-size: 20px;
+  margin: 20px;
+  background: #efefef;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #a2a2a2;
+}
+
+/* Estilos de los iconos */
+.container-footer footer .redes-footer .fa-facebook-f{
+    background: #41579a;
+    color: #ffff;
+}
+
+.container-footer .redes-footer:hover .fa-facebook-f{
+	animation: icono .5s ease;
+}
+
+.container-footer footer .redes-footer .fa-facebook-messenger{
+    background: linear-gradient(to bottom right, #476ff3, #3744ee, #c950da, #e274b4, #c53069);
+    color: #ffff;
+}
+
+.container-footer .redes-footer:hover .fa-facebook-messenger {
+	animation: icono .5s ease;
+}
+
+.container-footer footer .redes-footer .fa-instagram{
+    background: linear-gradient(to bottom right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+    color: #ffff;
+}
+
+.container-footer .redes-footer:hover .fa-instagram {
+	animation: icono .5s ease;
+}
+
+.container-footer footer .redes-footer .fa-youtube{
+   background: red;
+    color: #ffff;
+}
+
+.container-footer .redes-footer:hover .fa-youtube {
+	animation: icono .5s ease;
+}
+
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
+
+
+/* Estilo del footer pie de pagina del hr y h4 */
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #bebbbb;
+}
+
+.container-footer footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-weight: 500px;
+    font-size: 18px;
+}
+
+
+/* Responsive Desing-  adaptable a dispositivos mobiles */
+
+/* Responsive menu , articulos y pie de pagina */
+@media screen and (max-width: 1220px){
+    .header-content,
+    .container-content,
+    .container-footer footer{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+}
+
+/* Responsive articulos y aside en bloques */
+@media screen and (max-width: 1020px){
+    .container-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    article{
+        box-shadow: 0 0 0 0;
+    }
+
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+}
+
+/* Responsive completo pequeño  */
+
+@media screen and (max-width: 800px){
+
+    body{
+       overflow-x: hidden;
+    }
+
+    .container-all{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .move-container-all{
+        transform: translatex(300px);
+    }
+
+    .menu{
+        width:0px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: white;
+        overflow: hidden;
+        transform: translateX(-350px);
+        box-shadow: 10px 0 20px -25px black;
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .show-lateral-menu{
+        width: 300px;
+        transform: translateX(0px);
+    }
+
+    .menu nav ul{
+        flex-direction: column;
+    }
+
+    .menu nav ul li{
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+    }
+
+    .menu nav ul div img{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu-seleted:before{
+        width: 0;
+    }
+
+    .menu nav ul li a{
+        margin-top: 40px;
+        color: #858585;
+    }
+
+    .menu nav ul li a i{
+        width: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        color: red;
+    }
+
+    #icon-menu{
+        display: flex;
+    }
+
+    .container-aside{
+        flex-wrap: wrap;
+    }
+}

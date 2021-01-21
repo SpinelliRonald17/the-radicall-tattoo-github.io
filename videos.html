@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Videos Tattoo</title>
+
+    
+    <!-- link de iconos redes -->
+    <script src="https://kit.fontawesome.com/b10f1efc78.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0,minimum-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo-video-js.css">
+    <script src="js/script-videos.js"></script>
+    <link rel="stylesheet" href="css/estilo_pag_videos.css">
+
+    <!-- Alertas mensajes -->
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+     <!-- Carrucel de img -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    
+     <!-- Header menu -->
+     <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <h1>Menu <b>Videos</b></h1>
+            </div>
+
+
+            <div class="menu" id="show-menu">
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-house-user"></i> Inicio</a></li>
+                        <li><a href="#" id="tatuador" title="Informacion del Tatuador"><i id="tatuador" class="fas fa-pencil-ruler"></i> Tatuador</a></li>
+                        <li><a href="imagenes.html"><i class="far fa-images"></i> Imagenes</a></li>
+                        <li><a href="videos.html"><i title="Actualizar pagina" class="fas fa-sync-alt"></i> Recargar</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div id="ctn-icon-search">
+                <i title ="Buscar" class="fas fa-search" id="icon-search"></i>
+            </div>
+            
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+</header>
+
+    <div id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+    </div>
+
+        <ul id="box-search">
+            <li><a href="video/Tattoo.mp4" target="_blank"><i class="fas fa-search"></i>TINTA</a></li>
+            <li><a href="video/Tattoo.mp4" target="_blank"><i class="fas fa-search"></i>TINTA 2</a></li>
+            <li><a href="video/Tattoo.mp4" target="_blank"><i class="fas fa-search"></i>TINTA 3</a></li>
+            <li><a href="video/Tattoo.mp4" target="_blank"><i class="fas fa-search"></i>TINTA 4</a></li>
+            <li><a href="video/Tattoo.mp4" target="_blank"><i class="fas fa-search"></i>TINTA 5</a></li>
+            <li><a href="video/Tattoo.mp4" target="_blank"><i class="fas fa-search"></i>TINTA 6</a></li>
+            <li><a href="video/Tattoo.mp4" target="_blank"><i class="fas fa-search"></i>TINTA 7</a></li>
+            <li><a href="video/Tattoo.mp4" target="_blank"><i class="fas fa-search"></i>TINTA 8</a></li>
+            <li><a href="video/Tattoo.mp4" target="_blank"><i class="fas fa-search"></i>TINTA 9</a></li>
+            <li><a href="video/Tattoo.mp4" target="_blank"><i class="fas fa-search"></i>TINTA 10</a></li>
+            <li><a href="video/Tattoo.mp4" target="_blank"><i class="fas fa-search"></i>TINTA 11</a></li>
+            <li><a href="video/Tattoo.mp4" target="_blank"><i class="fas fa-search"></i>TINTA 12</a></li>
+        </ul>
+    
+        <div id="cover-ctn-search"></div>
+
+    <!--container-redes-sociales-->
+    <div class="container-redes" id="redes">
+        <a href="https://api.whatsapp.com/send?phone=573223903945&text=¿Qué servicios ofrecen?" target="_blank">
+            <img src="img/icon/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt=""> 
+        </a>
+        <a href="http://m.me/ronald.spinelli.17" target="_blank">
+          <img src="img/icon/icon-messenger.png" alt="" title="Enviar mensaje por Messenger">
+        </a>
+    </div>
+    <div class="container-all" id= "move-content">
+
+                    <main>
+                        <div class="contenedor">
+                            
+                            <div class="post"  category="laptops">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/Tattoo.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Tattoo con efectos de agujas</h4>
+
+                                <ul class="ctn-tag">
+                                    <li>TINTA</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="post"  category="laptops">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/Tattoo.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Tattoo con efectos de agujas</h4>
+
+                                <ul class="ctn-tag">
+                                    <li>TINTA 2</li>
+                                </ul>
+
+                            </div>
+                            
+                            <div class="post" data-category="DIBUJOS">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/Tattoo.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Tattoo con efectos de agujas</h4>
+
+                                <ul class="ctn-tag">
+                                    <li>TINTA 3</li>
+                                </ul>
+
+                            </div>
+                            
+                            <div class="post" data-category="DIBUJOS">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/Tattoo.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Tattoo con efectos de agujas</h4>
+
+                                <ul class="ctn-tag">
+                                    <li>TINTA 4</li>
+                                </ul>
+
+                            </div>
+                            
+                            <div class="post" data-category="DIBUJOS">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/Tattoo.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Tattoo con efectos de agujas</h4>
+
+                                <ul class="ctn-tag">
+                                    <li>TINTA 5</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="post" data-category="DIBUJOS">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/Tattoo.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Tattoo con efectos de agujas</h4>
+
+                                <ul class="ctn-tag">
+                                    <li>TINTA 6</li>
+                                </ul>
+
+                            </div>
+                            
+                            <div class="post" data-category="DIBUJOS">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/Tattoo.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Tattoo con efectos de agujas</h4>
+
+                                <ul class="ctn-tag">
+                                    <li>TINTA 7</li>
+                                </ul>
+
+                            </div>
+                            
+                            <div class="post" data-category="DIBUJOS">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/Tattoo.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Tattoo con efectos de agujas</h4>
+
+                                <ul class="ctn-tag">
+                                    <li>TINTA 8</li>
+                                </ul>
+
+                            </div>
+                            
+                            <div class="post" data-category="DIBUJOS">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/Tattoo.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Tattoo con efectos de agujas</h4>
+
+                                <ul class="ctn-tag">
+                                    <li>TINTA 9</li>
+                                </ul>
+
+                            </div>
+                            
+                            <div class="post" data-category="DIBUJOS">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/Tattoo.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Tattoo con efectos de agujas</h4>
+
+                                <ul class="ctn-tag">
+                                    <li>TINTA 10</li> 
+                                </ul>
+
+                            </div>
+                            
+                            <div class="post" data-category="DIBUJOS">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/Tattoo.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Tattoo con efectos de agujas</h4>
+
+                                <ul class="ctn-tag">
+                                    <li>TINTA 11</li>
+                                </ul>
+
+                            </div>
+                            
+                            <div class="post" data-category="DIBUJOS">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/Tattoo.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Tattoo con efectos de agujas</h4>
+
+                                <ul class="ctn-tag">
+                                    <li>TINTA 12</li>
+                                </ul>
+
+                            </div>
+                    
+                        </div>
+
+                    </main>
+
+              <!-- btn subir -->
+            <div id="button-up" title="Subir">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+
+            <!-- Footer--pide de pagina -->
+            <div class="container-footer">
+                    
+                <footer>
+
+                    <div class="logo-footer">
+                        <img src="img/logo.jpg" alt="">
+                    </div>
+
+                    <div class="redes-footer">
+                        <a href="#"><i title="Pagina Facebook" class="fab fa-facebook-f icon-redes-footer"></i></a>
+                        <!-- <a href="#"><i title="Chat Messenger" class="fab fa-facebook-messenger icon-redes-footer"></i></a> -->
+                        <a href="#"><i title="Pagina Instagram" class="fab fa-instagram icon-redes-footer"></i></a>
+                        <a href="#"><i title="Pagina Youtube" class="fab fa-youtube icon-redes-footer"></i></a>
+                    </div>
+
+                    <hr>
+
+                    <h4>Desarrollador Ronald Contreras</h4>
+
+                </footer>
+
+            </div>
+
+    </div>
+
+        <script src="js/script-btn-menu.js"></script>
+        <script src="js/script-buscardor.js"></script>
+        <script src="js/script-filtrar-videos.js"></script>
+        <script src="js/jquery-3.2.1.js"></script>
+
+        <script>
+            var reproductor = videojs('fm-video', {
+                fluid: true
+            });
+        </script>
+
+        <script> 
+         $("#tatuador").click(function(){
+            swal.fire({
+                title: 'Alejandro Herrera!',
+                text: 'Artista del tattoo..!!',
+                imageUrl: 'img/tatuador.jpg',
+                imageWidth: 800,
+                imageHeight: 400,
+                imageAlt: 'Custom image',
+                showConfirmButton: true,
+                })
+            });
+        </script>
+
+</body>
+</html>

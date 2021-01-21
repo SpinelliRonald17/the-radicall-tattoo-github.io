@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0,minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<link rel="stylesheet" href="css/estilo_img.css">
+
+	<!-- Alertas mensajes -->
+	<script src="sweetalert2.all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+	 <!-- Carrucel de img -->
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<title></title>
+</head>
+<body>
+
+	    <header>
+
+			<div class="header-content">
+
+				<div class="logo">
+					<h1>Menu<b> Imagenes</b></h1>
+				</div>
+
+
+				<div class="menu" id="show-menu">
+
+					<nav>
+						<ul>
+							<li><a href="index.html"><i class="fas fa-house-user"></i> Inicio</a></li>
+							<li><a href="#" id="tatuador" title="Informacion del Tatuador"><i id="tatuador" class="fas fa-pencil-ruler"></i> Tatuador</a></li>
+							<li><a href="videos.html"><i class="far fa-play-circle"></i> Videos</a></li>
+							<li><a href="imagenes.html"><i title="Actualizar pagina" class="fas fa-sync-alt"></i> Recargar</a></li>
+						</ul>
+					</nav>
+
+				</div>
+				
+			</div>
+
+			<div id="icon-menu">
+				<i class="fas fa-bars"></i>
+			</div>
+
+        </header>
+
+		<!--container-redes-sociales-->
+		<div class="container-redes" id="redes">
+			<a href="https://api.whatsapp.com/send?phone=573223903945&text=¿Qué servicios ofrecen?" target="_blank">
+				<img src="img/icon/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt=""> 
+			</a>
+			<a href="http://m.me/ronald.spinelli.17" target="_blank">
+			<img src="img/icon/icon-messenger.png" alt="" title="Enviar mensaje por Messenger">
+			</a>
+		</div>
+
+	<br><br><br><br><br>
+
+	    <div class="container-all" id= "move-content"></div>
+
+			<div class="contenedor">
+				<div class="header-menu">
+					
+					<form action="">
+						<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+					</form>
+
+					<div class="categorias" id="categorias">
+						<a href="#" class="activo">Todos</a>
+						<a href="#">Naturaleza</a>
+						<a href="#">Ciudades</a>
+						<a href="#">Personas</a>
+						<a href="#">Animales</a>
+					</div>
+				</div>
+			
+				<section class="grid" id="grid">
+					<div class="item" 
+						data-categoria="ciudades"
+						data-etiquetas="ciudades autos carros calles"
+						data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+					>
+						<div class="item-contenido">
+							<img src="img/ciudad1.png" alt="">
+						</div>
+					</div>
+
+					<div class="item"
+						data-categoria="personas"
+						data-etiquetas="personas mujeres"
+						data-descripcion="2.- Lorem ipsum dolor sit amet consectetur."
+					>
+						<div class="item-contenido">
+							<img src="img/persona1.png" alt="">
+						</div>
+					</div>
+
+					<div class="item"
+						data-categoria="paisajes"
+						data-etiquetas="paisajes montañas mar playas"
+						data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
+					>
+						<div class="item-contenido">
+							<img src="img/paisaje1.png" alt="">
+						</div>
+					</div>
+
+					<div class="item"
+						data-categoria="animales"
+						data-etiquetas="ANIMALES Animales animales Leon leones"
+						data-descripcion="4.- Lorem ipsum dolor sit amet consectetur."
+					>
+						<div class="item-contenido">
+							<img src="img/animal1.png" alt="">
+						</div>
+					</div>
+
+					<div class="item"
+						data-categoria="animales"
+						data-etiquetas="animales pandas"
+						data-descripcion="5.- Lorem ipsum dolor sit amet consectetur."
+					>
+						<div class="item-contenido">
+							<img src="img/animal2.png" alt="">
+						</div>
+					</div>
+
+					<div class="item"
+						data-categoria="personas"
+						data-etiquetas="personas mujeres"
+						data-descripcion="6.- Lorem ipsum dolor sit amet consectetur."
+					>
+						<div class="item-contenido">
+							<img src="img/persona2.png" alt="">
+						</div>
+					</div>
+
+					<div class="item"
+						data-categoria="paisajes"
+						data-etiquetas="paisajes montañas niebla"
+						data-descripcion="7.- Lorem ipsum dolor sit amet consectetur."
+					>
+						<div class="item-contenido">
+							<img src="img/paisaje2.png" alt="">
+						</div>
+					</div>
+
+					<div class="item" 
+						data-categoria="ciudades"
+						data-etiquetas="ciudades paisajes carreteras"
+						data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+					>
+						<div class="item-contenido">
+							<img src="img/ciudad2.png" alt="">
+						</div>
+					</div>
+
+					<div class="item"
+						data-categoria="naturaleza"
+						data-etiquetas="naturaleza hojas plantas"
+						data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+							"
+					>
+						<div class="item-contenido">
+							<img src="img/naturaleza1.png" alt="">
+						</div>
+					</div>
+
+					<div class="item"
+						data-categoria="naturaleza"
+						data-etiquetas="naturaleza hojas plantas"
+						data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+							"
+					>
+						<div class="item-contenido">
+							<img src="img/naturaleza1.png" alt="">
+						</div>
+					</div>
+
+					<div class="item"
+						data-categoria="naturaleza"
+						data-etiquetas="naturaleza hojas plantas"
+						data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+							"
+					>
+						<div class="item-contenido">
+							<img src="img/naturaleza1.png" alt="">
+						</div>
+					</div>
+
+					<div class="item"
+						data-categoria="naturaleza"
+						data-etiquetas="naturaleza hojas plantas"
+						data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+							"
+					>
+						<div class="item-contenido">
+							<img src="img/naturaleza1.png" alt="">
+						</div>
+					</div>
+
+
+					<div class="item"
+						data-categoria="naturaleza"
+						data-etiquetas="naturaleza hojas plantas"
+						data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+							"
+					>
+						<div class="item-contenido">
+							<img src="img/naturaleza1.png" alt="">
+						</div>
+					</div>
+
+
+					<div class="item"
+						data-categoria="naturaleza"
+						data-etiquetas="naturaleza hojas plantas"
+						data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+							"
+					>
+						<div class="item-contenido">
+							<img src="img/naturaleza1.png" alt="">
+						</div>
+					</div>
+				</section>
+
+				<section class="overlay" id="overlay">
+					<div class="contenedor-img">
+						<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+						<img src="" alt="">
+					</div>
+					<p class="descripcion"></p>
+				</section>
+
+				
+			</div>
+			
+				<!-- btn subir -->
+				<div id="button-up" title="Subir">
+					<i class="fas fa-chevron-up"></i>
+				</div>
+
+			<!-- Footer--pide de pagina -->
+			<div class="container-footer">
+						
+				<footer>
+					<div class="logo-footer">
+						<img src="img/logo.jpg" alt="">
+					</div>
+
+					<div class="redes-footer">
+						<a href="#"><i title="Pagina Facebook" class="fab fa-facebook-f icon-redes-footer"></i></a>
+						<!-- <a href="#"><i title="Chat Messenger" class="fab fa-facebook-messenger icon-redes-footer"></i></a> -->
+						<a href="#"><i title="Pagina Instagram" class="fab fa-instagram icon-redes-footer"></i></a>
+						<a href="#"><i title="Pagina Youtube" class="fab fa-youtube icon-redes-footer"></i></a>
+					</div>
+
+					<hr>
+
+					<h4>Desarrollador Ronald Contreras</h4>
+
+				</footer>
+
+			</div>
+	 </div>
+
+	 <script> 
+		$("#tatuador").click(function(){
+		   swal.fire({
+			   title: 'Alejandro Herrera!',
+			   text: 'Artista del tattoo..!!',
+			   imageUrl: 'img/tatuador.jpg',
+			   imageWidth: 800,
+			   imageHeight: 400,
+			   imageAlt: 'Custom image',
+			   showConfirmButton: true,
+			   })
+		   });
+	   </script>
+
+	<script src="js/script-btn-menu.js"></script>
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="js/script-imagenes.js"></script>
+
+
+</body>
+</html>
