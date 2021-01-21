@@ -44,13 +44,11 @@ header{
 /* Color del nombre */
 
  .logo h1 {
-   
-    
+   text-decoration: white; 
  }
 
-.logo h1 b{
-    
-   
+.logo h1 b{  
+    text-decoration: white; 
 } 
 
 
@@ -84,7 +82,7 @@ header{
     content: '';
     width: 100%;
     height: 4px;
-    background: red;
+    background:white;
     position: absolute;
     top: 0;
     left: 0;
@@ -121,13 +119,17 @@ header{
     top: 16px;
     padding: 10px;
     font-size: 20px;
-    background: #f3f0f0fa;
+    background: white;
     border-radius: 100%;
-    color: #787878;
+    color: black;
     display: none;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+#icon-menu i{
+    background: white;
 }
 
 #icon-menu:hover{
@@ -278,19 +280,17 @@ article img{
     margin-left: 20px;
     padding: 10px 50px;
     font-size: 16px;
-    background: red;
+    background: white;
     border: none;
-    color: white;
+    color: black;
     cursor: pointer;
     border-radius: 6px;
 }
 
 /* Efecto hover del boton */
 .container-aside aside button:hover{
-    opacity: 0.9;
+    opacity: 0.8;
 }
-
-
 
 
 
@@ -299,11 +299,11 @@ article img{
 #button-up{
     width: 60px;
     height: 60px;
-    background:red;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     border-radius: 50%;
     font-size: 20px;
     position: fixed;
@@ -315,10 +315,14 @@ article img{
     transform: scale(0);
 }
 
+#button-up i{
+    background: white;
+}
+
 #button-up:hover{
     transform: scale(1.1);
     border-color: rgba(0, 0, 0, 0.1);
-    background: rgb(247, 90, 90) ;
+    opacity: 0.8;
 }
 
 /* iconos de redes sociales flotantes */
@@ -348,7 +352,7 @@ article img{
 }
 
 .container-redes a:hover img{
-    background: rgba(0,0,0,0.10);
+    background: rgba(252, 249, 249, 0.918);
 }
 
 
@@ -527,7 +531,7 @@ article img{
     }
 
     .move-container-all{
-        transform: translatex(300px);
+        transform: translatex(200px);
     }
 
     .menu{
@@ -536,7 +540,7 @@ article img{
         position: fixed;
         top: 80px;
         left: 0;
-        background: white;
+        background: black;
         overflow: hidden;
         transform: translateX(-350px);
         box-shadow: 10px 0 20px -25px black;
@@ -544,7 +548,7 @@ article img{
     }
 
     .show-lateral-menu{
-        width: 300px;
+        width: 200px;
         transform: translateX(0px);
     }
 
@@ -575,13 +579,19 @@ article img{
     .menu nav ul li a{
         margin-top: 40px;
         color: #858585;
+        z-index: 1;
     }
 
     .menu nav ul li a i{
         width: 20px;
         display: inline-block;
         margin-right: 10px;
-        color: red;
+        color: white;
+        z-index: 1;
+    }
+
+    .menu nav ul li a:hover{
+      color: white;
     }
 
     #icon-menu{
