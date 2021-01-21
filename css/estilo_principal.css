@@ -250,6 +250,7 @@ article p{
 article img{
     width: 100%;
     margin-top: 20px;
+    box-shadow: 0 10px 30px -18px rgb(243, 240, 193);
 }
 
 
@@ -257,7 +258,7 @@ article img{
 
 .container-aside aside{
     width: 320px;
-    box-shadow: 0 0 20px -20px black;
+    box-shadow: 0 10px 30px -18px rgb(243, 240, 193);
     border-radius: 6px;
     overflow: hidden;
     margin-left: 40px;
