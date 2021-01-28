@@ -158,8 +158,8 @@ header{
 /* btn ir arriba */
 
 #button-up{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: white;
     display: flex;
     justify-content: center;
@@ -168,8 +168,8 @@ header{
     border-radius: 50%;
     font-size: 20px;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 70px;
+    right: 20px;
     cursor: pointer;
     border: 4px solid transparent;
     transition:all 300ms ease ;
@@ -182,7 +182,7 @@ header{
 
 #button-up:hover{
     transform: scale(1.1);
-    border-color: black;
+    border-color: rgba(0, 0, 0, 0.1);
     opacity: 0.8;
 }
 
@@ -190,11 +190,12 @@ header{
 
 .container-redes{
     position: fixed;
-    bottom: 20px;
+    bottom: 63px;
     left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: transparent;
     z-index: 1;
 }
 
@@ -205,7 +206,7 @@ header{
 .container-redes img{
     width: 60px;
     padding: 4px;
-    background: rgba(0,0,0,0.0);
+    background: transparent;
     cursor: pointer;
     border-radius: 100%;
     transition: all 300ms;
@@ -595,6 +596,7 @@ main .contenedor .post h4{
         transform: translateX(-350px);
         box-shadow: 10px 0 20px -25px black;
         transition: all 300ms cubic-bezier(1,0,0,1);
+    
     }
 
     main .contenedor {
@@ -649,7 +651,7 @@ main .contenedor .post h4{
 
     #icon-menu{
         display: flex;
-        right: 60px;
+        right: 50px;
     }
 
     .container-aside{

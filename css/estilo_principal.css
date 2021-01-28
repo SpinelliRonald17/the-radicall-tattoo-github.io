@@ -322,8 +322,8 @@ article img{
 /* btn ir arriba */
 
 #button-up{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: white;
     display: flex;
     justify-content: center;
@@ -332,8 +332,8 @@ article img{
     border-radius: 50%;
     font-size: 20px;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 70px;
+    right: 20px;
     cursor: pointer;
     border: 4px solid transparent;
     transition:all 300ms ease ;
@@ -354,11 +354,12 @@ article img{
 
 .container-redes{
     position: fixed;
-    bottom: 20px;
+    bottom: 63px;
     left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: transparent;
     z-index: 1;
 }
 
@@ -369,7 +370,7 @@ article img{
 .container-redes img{
     width: 60px;
     padding: 4px;
-    background: rgba(0,0,0,0.0);
+    background: transparent;
     cursor: pointer;
     border-radius: 100%;
     transition: all 300ms;
@@ -603,7 +604,7 @@ article img{
 
     .menu nav ul li a{
         margin-top: 40px;
-        color: #858585;
+        color: white;
         z-index: 1;
     }
 
@@ -621,6 +622,7 @@ article img{
 
     #icon-menu{
         display: flex;
+        right: 10px;
     }
 
     .container-aside{
